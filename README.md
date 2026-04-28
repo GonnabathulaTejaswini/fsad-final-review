@@ -42,6 +42,13 @@ This project is a Learning Management System (LMS) built with React.js for the f
 ### Admin Dashboard
 - Manage courses and assessment questions.
 - Track students, courses, and enrollments.
+- **Project Submissions Review:** Approve or reject student project submissions.
+- **Direct Video Management:** Upload video files directly for course content.
+
+### User Dashboard
+- **Personalized Stats:** View enrolled courses and completion metrics.
+- **Activity Tracking:** Quick resume of recently accessed courses.
+- **Project Submissions:** Upload final projects to complete courses.
 
 --- 
 
@@ -109,11 +116,23 @@ This project is a Learning Management System (LMS) built with React.js for the f
 
 - As an admin, you can manage courses, create assessments, and monitor user progress. To access the admin dashboard, if your application is running locally, you can navigate to http://localhost:3000/admin.
 
-## Default Admin Credentials
-- Email: admin@gmail.com
-- Password: admin123
+## Default Credentials
+
+### Admin Portal
+- Email: **admin@gmail.com**
+- Password: **admin123**
+
+### Student Portal
+- Email: **student@gmail.com**
+- Password: **student123**
 
 - Users can register, log in, view courses, take assessments, and receive certificates.
+
+## Cloud Deployment (Render)
+This project is pre-configured for deployment on **Render.com** using the included `render.yaml` blueprint.
+1. Connect this repository to Render.
+2. Create a new **Blueprint Instance**.
+3. Render will automatically set up the **PostgreSQL Database**, **Spring Boot Backend**, and **React Frontend**.
 
 ## API Documentation
 
