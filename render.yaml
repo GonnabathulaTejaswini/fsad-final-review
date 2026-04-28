@@ -2,10 +2,10 @@ services:
   # Backend Service
   - type: web
     name: lms-backend
-    env: java
+    env: docker
     plan: free
-    buildCommand: mvn clean install -DskipTests
-    startCommand: java -jar backend/target/Learning-Management-System-0.0.1-SNAPSHOT.jar
+    dockerContext: backend
+    dockerfilePath: Dockerfile
     envVars:
       - key: DATABASE_URL
         fromDatabase:
